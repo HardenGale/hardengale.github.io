@@ -1,68 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>欢迎来到我的个人主页</title>
-    <style>
-        /* 全局样式：设置字体、背景和文本颜色 */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6; /* 柔和的浅灰色背景 */
-            color: #333; /* 深灰色文本 */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-            min-height: 100vh; /* 确保占据整个视口高度 */
-        }
+---
+layout: page
+description: "Home Page"
+---
 
-        /* 容器样式：将内容放在一个卡片中 */
-        .container {
-            background-color: #ffffff; /* 白色卡片背景 */
-            padding: 40px 60px;
-            border-radius: 12px; /* 圆角 */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 柔和的阴影效果 */
-            text-align: center;
-            max-width: 600px;
-            width: 90%;
-            transition: transform 0.3s ease-in-out;
-        }
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
 
-        /* 鼠标悬停效果 */
-        .container:hover {
-            transform: translateY(-5px); /* 悬停时轻微上浮 */
-        }
-
-        /* 标题样式 */
-        h1 {
-            color: #007bff; /* 醒目的蓝色 */
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-
-        /* 段落样式 */
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #666;
-        }
-
-        /* 额外的欢迎词 */
-        .welcome-text {
-            margin-top: 30px;
-            font-style: italic;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <p>这是我的 GitHub Pages 网站，现在看起来漂亮多了！</p>
-        <p class="welcome-text">你已经成功部署了你的用户网站，下一步就是添加更多个人内容啦。</p>
-    </div>
-</body>
-</html>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
