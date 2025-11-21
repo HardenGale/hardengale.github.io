@@ -1,11 +1,11 @@
 # Site settings
 title: 
-SEOTitle: HardenGale's Blog
+SEOTitle: wenton's Blog
 header-img: img/home-bg.jpg
 email: wongtongjie@gmail.com
 description: "Wishing you a perfect day"
-keyword: "HardenGale, Python, C++, LLM, Deep Learning, Reinforcement Learning, Computer Vision, Natural Language Processing"
-url: "https://www.wangtongjie.cloud-ip.cc/" 
+keyword: "Python, C++, LLM, Deep Learning, Reinforcement Learning, Computer Vision, Natural Language Processing"
+url: "https://www.wenton.cloud-ip.cc/" 
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -67,7 +67,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: "G-L60Z89VR35" # Format: UA-xxxxxx-xx
-ga_domain: wangtongjie.cloud-ip.cc
+ga_domain: wenton.cloud-ip.cc
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
