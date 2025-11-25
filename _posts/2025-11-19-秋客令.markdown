@@ -4,6 +4,7 @@ title:      "秋客令"
 subtitle:   "公未渡河 公竟渡河"
 author: "Rango"
 catalog: true
+comments: true
 header-img: "img/秋客令.jpg"
 header-mask: 0.4
 tags:

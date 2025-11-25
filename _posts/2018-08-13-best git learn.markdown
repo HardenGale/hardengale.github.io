@@ -4,6 +4,7 @@ title:      "git"
 subtitle:   "代码提交 冲突合并"
 author: "Rango"
 catalog: true
+comments: true
 header-img: "img/git.png"
 header-mask: 0.4
 tags:

@@ -4,6 +4,7 @@ title:      "Caught Between Shadows"
 subtitle:   "The Agony and Power of Belonging Nowhere"
 author: "Rango"
 catalog: true
+comments: true
 header-img: "img/liminality.jpg"
 header-mask: 0.4
 tags:
