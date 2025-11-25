@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 github_username: HardenGale
-twitter_username: HardenGale
+# twitter_username: HardenGale
 #facebook_username:  huxpro
 #linkedin_username:  huxpro
 
@@ -71,7 +71,7 @@ ga_domain: wenton.cloud-ip.cc
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "HardenGale <br> XX @ XXXX"
+sidebar-about-description: "Wenton <br> Algorithm Application Developer"
 sidebar-avatar: https://github.com/HardenGale.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
