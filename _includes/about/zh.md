@@ -1,21 +1,13 @@
-### About Me
+### 关于我
 
-Hello there! I'm **Wenton**. Welcome to my blog, where I share my explorations and projects in the **era of AI**.
+大家好！我是 **Wenton**，一位专注于将前沿人工智能研究转化为实用、可扩展解决方案的算法应用开发人员。欢迎来到我的博客，在这里我分享我在 AI 时代的探索与项目。
 
-I am an **Algorithm Application Developer** focused on translating cutting-edge research into practical, scalable solutions.
+---
 
-### Core Expertise & Interests 
+### 核心专长与兴趣
 
-My passion lies in building intelligent applications, focusing on:
+我的热情在于构建智能应用，重点关注以下领域：
 
-* **Generative AI:** LLM, VLM, RAG.
-* **Knowledge Systems:** NLP, Knowledge Graphs (KG), Graph Databases.
-* **Computer Vision:** Image Segmentation.
-
-##### Projects
-
-- [xx][1] · xx · 2024
-- [xx][2] · xx · 2024
-
-[1]: url
-[2]: url
+* **生成式 AI:** LLM、VLM、RAG。
+* **知识系统:** NLP、知识图谱 (KG)、图数据库。
+* **计算机视觉:** 图像分割。

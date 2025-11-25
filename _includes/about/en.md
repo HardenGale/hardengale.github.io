@@ -9,7 +9,8 @@ My passion lies in building intelligent applications, focusing on:
 * **Generative AI:** LLM, VLM, RAG.
 * **Knowledge Systems:** NLP, Knowledge Graphs (KG), Graph Databases.
 * **Computer Vision:** Image Segmentation.
-##### Projects
+
+### Projects
 
 - [xx][1] · xx · 2024
 - [xx][2] · xx · 2024
